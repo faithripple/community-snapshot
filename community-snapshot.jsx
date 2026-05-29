@@ -490,8 +490,8 @@ const CommunitySnapshot = () => {
 
           .snapshot-container {
             min-height: 100vh;
-            background: linear-gradient(135deg, #14285C 0%, #206B21 100%);
-            padding: 2rem 1rem;
+            background: linear-gradient(180deg, #14554A 0%, #2B7A6F 50%, #5A9E94 100%);
+            padding: 0;
             font-family: 'Lora', serif;
           }
 
@@ -499,154 +499,169 @@ const CommunitySnapshot = () => {
             max-width: 900px;
             margin: 0 auto;
             background: #FFFDF8;
-            border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            border-radius: 0;
+            box-shadow: none;
             overflow: hidden;
           }
 
           .snapshot-header {
-            background: linear-gradient(135deg, #F7F1E8 0%, #FFFDF8 100%);
-            padding: 3rem 2rem 2rem;
-            border-bottom: 3px solid #C89B3C;
-            position: relative;
+            background: linear-gradient(135deg, #1A6B5E 0%, #2B8973 100%);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: none;
           }
 
-          .snapshot-header::before {
-            content: '♥';
-            position: absolute;
-            top: 1.5rem;
-            right: 2rem;
-            font-size: 2rem;
-            color: #C87979;
-            opacity: 0.6;
+          .header-brand {
+            color: #F7F1E8;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+          }
+
+          .header-title {
+            color: #F7F1E8;
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
           }
 
           .snapshot-title {
             font-family: 'Kalam', cursive;
-            font-size: 2.5rem;
-            color: #14285C;
-            margin-bottom: 0.5rem;
+            font-size: 2.2rem;
+            color: #F7F1E8;
+            margin-bottom: 0;
             font-weight: 700;
-          }
-
-          .snapshot-subtitle {
-            font-size: 1.1rem;
-            color: #206B21;
-            line-height: 1.6;
-            max-width: 600px;
-            margin-bottom: 1.5rem;
-          }
-
-          .snapshot-note {
-            background: #FFF9E6;
-            border-left: 4px solid #C89B3C;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            font-style: italic;
-            color: #2B2B2B;
-            font-size: 0.95rem;
+            line-height: 1.2;
           }
 
           .snapshot-body {
-            padding: 2rem;
+            padding: 2.5rem 2rem;
           }
 
-          .snapshot-section {
+          .completion-celebration {
+            text-align: center;
             margin-bottom: 2.5rem;
-            padding-bottom: 2rem;
-            border-bottom: 2px dashed #D9B98F;
           }
 
-          .snapshot-section:last-child {
-            border-bottom: none;
-          }
-
-          .section-header {
+          .checkmark-icon {
+            width: 60px;
+            height: 60px;
+            background: #5A9E94;
+            border-radius: 50%;
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 1.5rem;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
           }
 
-          .section-icon {
-            font-size: 1.5rem;
-          }
-
-          .section-title {
+          .celebration-title {
             font-family: 'Kalam', cursive;
-            font-size: 1.75rem;
-            color: #14285C;
-            font-weight: 600;
+            font-size: 2.2rem;
+            color: #14554A;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
           }
 
-          .answer-group {
-            margin-bottom: 1.25rem;
+          .celebration-subtitle {
+            font-family: 'Kalam', cursive;
+            font-size: 1.5rem;
+            color: #2B8973;
+            margin-bottom: 1rem;
+            font-style: italic;
           }
 
-          .answer-label {
-            font-weight: 600;
-            color: #206B21;
-            margin-bottom: 0.5rem;
-            display: block;
-            font-size: 0.95rem;
-          }
-
-          .answer-text {
+          .celebration-copy {
+            font-size: 1rem;
             color: #2B2B2B;
             line-height: 1.7;
-            padding-left: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
           }
 
-          .answer-list {
-            list-style: none;
-            padding-left: 1rem;
-          }
-
-          .answer-list li {
-            position: relative;
-            padding-left: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: #2B2B2B;
-            line-height: 1.6;
-          }
-
-          .answer-list li::before {
-            content: '♥';
-            position: absolute;
-            left: 0;
-            color: #C87979;
-            font-size: 0.9rem;
-          }
-
-          .snapshot-reminder {
-            background: linear-gradient(135deg, #F7F1E8 0%, #FFFDF8 100%);
-            border: 3px solid #C89B3C;
-            border-radius: 12px;
+          .info-card {
+            background: #F7F1E8;
+            border-left: 4px solid #5A9E94;
+            border-radius: 8px;
             padding: 2rem;
             margin: 2rem 0;
           }
 
-          .reminder-title {
-            font-family: 'Kalam', cursive;
+          .info-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+          }
+
+          .info-icon {
+            width: 50px;
+            height: 50px;
+            background: #5A9E94;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 1.5rem;
-            color: #14285C;
-            margin-bottom: 1rem;
+            flex-shrink: 0;
+          }
+
+          .info-title {
+            font-family: 'Kalam', cursive;
+            font-size: 1.3rem;
+            color: #14554A;
             font-weight: 600;
           }
 
-          .reminder-text {
+          .info-row {
+            margin-bottom: 1.25rem;
+          }
+
+          .info-row:last-child {
+            margin-bottom: 0;
+          }
+
+          .info-label {
+            font-weight: 600;
+            color: #1A6B5E;
+            margin-bottom: 0.35rem;
+            font-size: 0.9rem;
+          }
+
+          .info-value {
             color: #2B2B2B;
-            line-height: 1.7;
+            line-height: 1.6;
+            font-size: 1rem;
+          }
+
+          .cta-section {
+            background: linear-gradient(135deg, #1A6B5E 0%, #2B8973 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            margin: 2rem 0;
+          }
+
+          .cta-icon {
+            font-size: 2rem;
             margin-bottom: 1rem;
           }
 
-          .snapshot-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-            padding: 2rem;
-            background: #F7F1E8;
+          .cta-title {
+            font-family: 'Kalam', cursive;
+            font-size: 1.75rem;
+            color: #F7F1E8;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+          }
+
+          .cta-copy {
+            color: #F7F1E8;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
           }
 
           .action-btn {
@@ -660,90 +675,411 @@ const CommunitySnapshot = () => {
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
+            margin: 0.5rem;
           }
 
           .btn-primary {
-            background: #206B21;
+            background: #E07A7A;
             color: #FFFDF8;
-            box-shadow: 0 4px 12px rgba(32, 107, 33, 0.3);
+            box-shadow: 0 4px 12px rgba(224, 122, 122, 0.3);
+            width: 100%;
+            max-width: 500px;
           }
 
           .btn-primary:hover {
-            background: #14285C;
+            background: #D86262;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(20, 40, 92, 0.4);
+            box-shadow: 0 6px 20px rgba(224, 122, 122, 0.4);
           }
 
           .btn-secondary {
-            background: #C89B3C;
-            color: #FFFDF8;
-            box-shadow: 0 4px 12px rgba(200, 155, 60, 0.3);
+            background: #E8F3F1;
+            color: #1A6B5E;
+            border: 2px solid #5A9E94;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.25rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            font-size: 1.05rem;
+            font-weight: 600;
           }
 
           .btn-secondary:hover {
-            background: #D9B98F;
-            transform: translateY(-2px);
+            background: #D6EAE6;
+            border-color: #2B8973;
           }
 
-          .btn-tertiary {
-            background: transparent;
-            color: #14285C;
-            border: 2px solid #14285C;
+          .btn-icon {
+            font-size: 1.5rem;
           }
 
-          .btn-tertiary:hover {
-            background: #14285C;
-            color: #FFFDF8;
+          .snapshot-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            justify-content: center;
+            padding: 1.5rem 0;
+          }
+
+          .snapshot-reminder {
+            background: #F7F1E8;
+            border-top: 3px solid #5A9E94;
+            border-radius: 0;
+            padding: 2rem;
+            margin: 2rem 0 0;
+            text-align: center;
+          }
+
+          .reminder-copy {
+            color: #2B2B2B;
+            line-height: 1.7;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+          }
+
+          .reminder-accent {
+            font-family: 'Kalam', cursive;
+            color: #2B8973;
+            font-style: italic;
+          }
+
+          .closing-message {
+            font-family: 'Kalam', cursive;
+            font-size: 1.3rem;
+            color: #1A6B5E;
+            margin: 1.5rem 0 0.5rem;
+            font-weight: 500;
+          }
+
+          .closing-heart {
+            color: #E07A7A;
+            font-size: 1.2rem;
+          }
+
+          .closing-copy {
+            color: #2B2B2B;
+            font-size: 0.95rem;
+          }
+
+          .snapshot-section {
+            margin-bottom: 2rem;
+            padding-bottom: 0;
+            border-bottom: none;
+            display: none;
           }
 
           @media print {
             .snapshot-actions {
               display: none;
             }
-            
+
             .snapshot-container {
               background: white;
               padding: 0;
             }
-            
+
             .snapshot-wrapper {
               box-shadow: none;
               max-width: 100%;
+            }
+
+            .snapshot-section {
+              display: block;
+              margin-bottom: 2rem;
+              padding-bottom: 2rem;
+              border-bottom: 2px dashed #D9B98F;
+            }
+
+            .snapshot-section:last-child {
+              border-bottom: none;
             }
           }
 
           @media (max-width: 768px) {
             .snapshot-title {
-              font-size: 2rem;
+              font-size: 1.8rem;
             }
 
-            .snapshot-header {
-              padding: 2rem 1.5rem 1.5rem;
+            .celebration-title {
+              font-size: 1.8rem;
             }
 
             .snapshot-body {
               padding: 1.5rem;
             }
 
-            .action-btn {
-              width: 100%;
+            .btn-primary {
+              padding: 0.875rem 1.5rem;
             }
           }
         `}</style>
 
         <div className="snapshot-wrapper">
           <div className="snapshot-header">
-            <h1 className="snapshot-title">Your Community Planning Snapshot</h1>
-            <p className="snapshot-subtitle">
-              This is not a final business plan. It's a snapshot of what you already know right now, 
-              so we can use our conversation to move the needle instead of digging through the fog.
-            </p>
-            <div className="snapshot-note">
-              Bring this to your Kitchen Table Strategy Sesh. Let's turn these ideas into action steps.
-            </div>
+            <div className="header-brand">📍 Community Planning Map</div>
+            <div className="header-title">Your Community Planning Map Is Complete!</div>
           </div>
 
           <div className="snapshot-body">
+            {/* Celebration Section */}
+            <div className="completion-celebration">
+              <div className="checkmark-icon">✓</div>
+              <h1 className="celebration-title">You did the thing!</h1>
+              <p className="celebration-subtitle">Here's your completed Community Planning Map. <span className="closing-heart">♥</span></p>
+              <p className="celebration-copy">You've captured the big picture and the important details. Now let's turn this into your next steps.</p>
+            </div>
+
+            {/* Information Card */}
+            <div className="info-card">
+              <div className="info-header">
+                <div className="info-icon">👤</div>
+                <h2 className="info-title">Your Information</h2>
+              </div>
+              <div className="info-row">
+                <div className="info-label">Name</div>
+                <div className="info-value">{formData.name}</div>
+              </div>
+              <div className="info-row">
+                <div className="info-label">Email</div>
+                <div className="info-value">{formData.email}</div>
+              </div>
+            </div>
+
+            {/* Full Map for Printing */}
+            {/* Section 1: Your Community Idea */}
+            <div className="snapshot-section">
+              <div className="section-header">
+                <span className="section-icon">✨</span>
+                <h2 className="section-title">Your Community Idea</h2>
+              </div>
+              
+              {formData.communityIdea && (
+                <div className="answer-group">
+                  <span className="answer-label">The Idea:</span>
+                  <p className="answer-text">{formData.communityIdea}</p>
+                </div>
+              )}
+
+              {formData.communityTypes.length > 0 && (
+                <div className="answer-group">
+                  <span className="answer-label">Community Type:</span>
+                  <ul className="answer-list">
+                    {formData.communityTypes.map((type, i) => (
+                      <li key={i}>{type}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+
+            {/* Section 2: Your Current Audience */}
+            <div className="snapshot-section">
+              <div className="section-header">
+                <span className="section-icon">👥</span>
+                <h2 className="section-title">Your Current Audience</h2>
+              </div>
+
+              {formData.audienceLocations.length > 0 && (
+                <div className="answer-group">
+                  <span className="answer-label">Where They're Hanging Out:</span>
+                  <ul className="answer-list">
+                    {formData.audienceLocations.map((loc, i) => (
+                      <li key={i}>{loc}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {formData.audienceNotes && (
+                <div className="answer-group">
+                  <span className="answer-label">Audience Notes:</span>
+                  <p className="answer-text">{formData.audienceNotes}</p>
+                </div>
+              )}
+            </div>
+
+            {/* Section 3: Your Skool Setup */}
+            <div className="snapshot-section">
+              <div className="section-header">
+                <span className="section-icon">🏡</span>
+                <h2 className="section-title">Your Skool Setup</h2>
+              </div>
+
+              {formData.launchTimeline && (
+                <div className="answer-group">
+                  <span className="answer-label">Launch Timeline:</span>
+                  <p className="answer-text">{formData.launchTimeline}</p>
+                </div>
+              )}
+
+              {formData.publicPrivate && (
+                <div className="answer-group">
+                  <span className="answer-label">Public or Private:</span>
+                  <p className="answer-text">{formData.publicPrivate}</p>
+                </div>
+              )}
+
+              {formData.pricing && (
+                <div className="answer-group">
+                  <span className="answer-label">Pricing Model:</span>
+                  <p className="answer-text">{formData.pricing}</p>
+                </div>
+              )}
+
+              {formData.pricingDetails && (
+                <div className="answer-group">
+                  <span className="answer-label">Pricing Ideas:</span>
+                  <p className="answer-text">{formData.pricingDetails}</p>
+                </div>
+              )}
+            </div>
+
+            {/* Section 4: Your Brand + Build Pieces */}
+            <div className="snapshot-section">
+              <div className="section-header">
+                <span className="section-icon">🎨</span>
+                <h2 className="section-title">Your Brand + Build Pieces</h2>
+              </div>
+
+              {formData.hasBrand && (
+                <div className="answer-group">
+                  <span className="answer-label">Brand Status:</span>
+                  <p className="answer-text">{formData.hasBrand}</p>
+                </div>
+              )}
+
+              {formData.hasGraphics && (
+                <div className="answer-group">
+                  <span className="answer-label">Graphics Status:</span>
+                  <p className="answer-text">{formData.hasGraphics}</p>
+                </div>
+              )}
+
+              {formData.leaderboardIdeas && (
+                <div className="answer-group">
+                  <span className="answer-label">Leaderboard Ideas:</span>
+                  <p className="answer-text">{formData.leaderboardIdeas}</p>
+                </div>
+              )}
+            </div>
+
+            {/* Section 5: Your Member Experience */}
+            <div className="snapshot-section">
+              <div className="section-header">
+                <span className="section-icon">💫</span>
+                <h2 className="section-title">Your Member Experience</h2>
+              </div>
+
+              {formData.firstWin && (
+                <div className="answer-group">
+                  <span className="answer-label">First Member Win:</span>
+                  <p className="answer-text">{formData.firstWin}</p>
+                </div>
+              )}
+
+              {formData.events.length > 0 && (
+                <div className="answer-group">
+                  <span className="answer-label">Events/Activities:</span>
+                  <ul className="answer-list">
+                    {formData.events.map((event, i) => (
+                      <li key={i}>{event}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {formData.eventIdeas && (
+                <div className="answer-group">
+                  <span className="answer-label">Event Ideas:</span>
+                  <p className="answer-text">{formData.eventIdeas}</p>
+                </div>
+              )}
+            </div>
+
+            {/* Section 6: Where You Want Support */}
+            <div className="snapshot-section">
+              <div className="section-header">
+                <span className="section-icon">🤝</span>
+                <h2 className="section-title">Where You Want Support</h2>
+              </div>
+
+              {formData.needsHelp.length > 0 && (
+                <div className="answer-group">
+                  <span className="answer-label">Need Help With:</span>
+                  <ul className="answer-list">
+                    {formData.needsHelp.map((help, i) => (
+                      <li key={i}>{help}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {formData.whatWouldHelp && (
+                <div className="answer-group">
+                  <span className="answer-label">What Would Help Right Now:</span>
+                  <p className="answer-text">{formData.whatWouldHelp}</p>
+                </div>
+              )}
+
+              {formData.hopesToWalkAway.length > 0 && (
+                <div className="answer-group">
+                  <span className="answer-label">Hopes for Our Session:</span>
+                  <ul className="answer-list">
+                    {formData.hopesToWalkAway.map((hope, i) => (
+                      <li key={i}>{hope}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+
+            {/* CTA Section */}
+            <div className="cta-section">
+              <div className="cta-icon">✨</div>
+              <h3 className="cta-title">Ready to talk through your map?</h3>
+              <p className="cta-copy">You've got the information. Now let's figure out what matters, what's missing, and what your next step should be.</p>
+            </div>
+
+            {/* Action Buttons */}
+            <div className="snapshot-actions">
+              <a 
+                href="https://go.thefaithripple.com/widget/bookings/kitchen-table-session" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="action-btn btn-primary"
+              >
+                📅 Book Your Kitchen Table Strategy Session
+              </a>
+              
+              <button 
+                className="action-btn btn-secondary"
+                onClick={() => window.print()}
+              >
+                <span>📥 Print or Save as PDF</span>
+                <span className="btn-icon">→</span>
+              </button>
+              
+              <button 
+                className="action-btn btn-secondary"
+                onClick={startOver}
+              >
+                <span>🔄 Start Over</span>
+                <span className="btn-icon">→</span>
+              </button>
+            </div>
+
+            {/* Reminder & Closing */}
+            <div className="snapshot-reminder">
+              <p className="closing-message">You're building something that matters. <span className="closing-heart">♥</span></p>
+              <p className="closing-copy">Bring this map to your Kitchen Table Strategy Session. I'm cheering you on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
             {/* Section 1: Your Community Idea */}
             <div className="snapshot-section">
               <div className="section-header">
