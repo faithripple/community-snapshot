@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+ 
 const CommunitySnapshot = () => {
   const [currentSection, setCurrentSection] = useState(0);
   const [showSnapshot, setShowSnapshot] = useState(false);
