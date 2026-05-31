@@ -1743,7 +1743,7 @@ const CommunitySnapshot = () => {
       `}</style>
 
       <div className="content-wrapper">
-        {currentSection === 0 && (
+        {currentSection === 0 ? (
           <div className="hero-section">
             <div className="brand-title">Your Skool Building Bestie</div>
             <h1 className="hero-title">Thinking about building a Skool community?</h1>
@@ -1757,7 +1757,7 @@ const CommunitySnapshot = () => {
             </div>
             <div className="hero-cta">Bring a bevy. Let's map the thing.</div>
           </div>
-        )}
+        ) : null}
 
         <div className="progress-bar">
           <div className="progress-steps">
