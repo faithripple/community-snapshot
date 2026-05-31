@@ -1743,7 +1743,7 @@ const CommunitySnapshot = () => {
       `}</style>
 
       <div className="content-wrapper">
-        <div className="hero-section" style={{ display: currentSection === 0 ? 'block' : 'none' }}>
+        <div className="hero-section">
           <div className="brand-title">Your Skool Building Bestie</div>
           <h1 className="hero-title">Thinking about building a Skool community?</h1>
           <div className="hero-subtitle">
