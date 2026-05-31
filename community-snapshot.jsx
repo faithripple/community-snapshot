@@ -1743,21 +1743,19 @@ const CommunitySnapshot = () => {
       `}</style>
 
       <div className="content-wrapper">
-        {currentSection === 0 ? (
-          <div className="hero-section">
-            <div className="brand-title">Your Skool Building Bestie</div>
-            <h1 className="hero-title">Thinking about building a Skool community?</h1>
-            <div className="hero-subtitle">
-              Before you start clicking buttons, opening doors, and building yourself into confusion… 
-              let's get a few things out of your head and onto the table.
-              <br /><br />
-              This Community Planning Snapshot will help you gather the basics of what you already 
-              know about your community idea so we can use our Kitchen Table Strategy Sesh for the 
-              good stuff: clarity, next steps, and what actually needs to happen next.
-            </div>
-            <div className="hero-cta">Bring a bevy. Let's map the thing.</div>
+        <div className="hero-section" style={{ display: currentSection === 0 ? 'block' : 'none' }}>
+          <div className="brand-title">Your Skool Building Bestie</div>
+          <h1 className="hero-title">Thinking about building a Skool community?</h1>
+          <div className="hero-subtitle">
+            Before you start clicking buttons, opening doors, and building yourself into confusion… 
+            let's get a few things out of your head and onto the table.
+            <br /><br />
+            This Community Planning Snapshot will help you gather the basics of what you already 
+            know about your community idea so we can use our Kitchen Table Strategy Sesh for the 
+            good stuff: clarity, next steps, and what actually needs to happen next.
           </div>
-        ) : null}
+          <div className="hero-cta">Bring a bevy. Let's map the thing.</div>
+        </div>
 
         <div className="progress-bar">
           <div className="progress-steps">
